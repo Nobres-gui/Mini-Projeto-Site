@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zoológioco de Guarulhos</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" type="imagex/png" href="assets/Brasão_de_Guarulhos.ico">
+  </head>
+  <body>
+    <header class="cabecalho">
+     <img src="assets/logo.png" alt="Logo Zoologico" style="width: 15%;">
+      <ul class="cabecalho__lista">
+        <li class="cabelhalho__lista-itens">
+          <a href="index.html"> Home </a>
+        </li>
+        <li class="cabelhalho__lista-itens">
+          <a href="#galeriaFotos"> Animais </a>
+        </li>
+        <li class="cabelhalho__lista-itens">
+            <a href="#infraestrutura">Infraestrutura</a>
+        </li>
+        <li class="cabelhalho__lista-itens">
+            <a href="#comoChegar">
+                Como chegar
+            </a>
+        </li>
+      </ul>
+    </header>
+        <div class="container__logo">
+          <img
+            src="assets/logo.png"
+            alt="Logo Zoológico"
+            class="container__titulo"
+          />
+        </div>
+        <img
+        src="assets/girafa.png"
+        alt="Imagem Ilustração Girafa"
+        class="img-girafa"
+        />
+        <img
+        src="assets/macaco.png"
+        alt="Imagem Ilustração Macaco"
+        class="img-macaco"
+        />
+        <img src="assets/tatu.png" alt="Imagem Ilustração Tatu" class="img-tatu" />
+
+    <div class="container">
+      <h2>Sejam Bem-Vindos</h2>
+      <div class="container__conteudo">
+        <div class="slideshow-container">
+          <!-- Full-width images with number and caption text -->
+          <div class="mySlides fade">
+            <div class="numbertext">1 / 3</div>
+            <img src="assets/leao.jpg" style="width: 23.75em" />
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext">2 / 3</div>
+            <img
+              src="assets/tucano.jpg"
+              style="width: 23.75em; height: 252.863px"
+            />
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext">3 / 3</div>
+            <img src="assets/jabuti.jpg" style="width: 23.75em" />
+          </div>
+
+          <!-- Next and previous buttons -->
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br />
+
+        <span>
+          O Zoológico Municipal de Guarulhos, criado em 1981, mantém cerca de
+          400 animais de 100 diferentes espécies, priorizando a fauna nacional
+          com 91% das espécies do plantel sendo nativas.
+          <br /><br />
+          O ZooGuarulhos participa de programas de conservação de espécies
+          ameaçadas, bem-estar animal, realiza pesquisas científicas e
+          atividades de educação para conservação da biodiversidade. Os animais
+          recebem cuidados constantes, tanto preventivos como curativos, por uma
+          equipe de biólogos, veterinários e tratadores, incumbidos na
+          manutenção de sua saúde e bem estar.
+        </span>
+      </div>
+    </div>
+
+    <div id="infraestrutura" class="container__infraestrutura">
+        <h2 >Infraestrutura</h2>
+        <div class="container__flex" >
+            <img src="assets/about.png" alt="Logo Zoologico">
+            <span>A infraestrutura do Zoológico Municipal de Guarulhos inclui clínica veterinária e área de manejo, com salas de atendimento, laboratório, sala de cirurgia, área de internação e sala de necropsia.
+                <br> <br>
+            Além disso, oferece setor de alimentação e biotério para produção de alimentos vivos, garantindo que os animais tenham uma dieta balanceada e adequada.
+            </span>
+        </div>
+
+    </div>
+
+    <div class="container__galeria" id="galeriaFotos">
+      <h1 class="container__galeria-titulo">Animais</h1>
+      <!-- Control buttons -->
+      <div id="myBtnContainer">
+        <button class="btn active" onclick="filterSelection('all')">
+          Show all
+        </button>
+        <button class="btn" onclick="filterSelection('aves')">Aves</button>
+        <button class="btn" onclick="filterSelection('repteis')">
+          Repteis
+        </button>
+        <button class="btn" onclick="filterSelection('mamiferos')">
+          Mamíferos
+        </button>
+      </div>
+
+      <!-- The filterable elements. Note that some have multiple class names (this can be used if they belong to multiple categories) -->
+      <div class="filtros">
+        <img
+          class="filterDiv mamiferos"
+          src="assets/urso.webp"
+          alt=""
+          style="width: 20%"
+        />
+        <img
+          class="filterDiv mamiferos"
+          src="assets/Elefante.png"
+          alt=""
+          style="width: 20%"
+        />
+        <img
+          class="filterDiv mamiferos"
+          src="assets/Girafa (2).png"
+          alt=""
+          style="width: 20%"
+        />
+        <img
+          class="filterDiv mamiferos"
+          src="assets/Leao.png"
+          alt=""
+          style="width: 20%"
+        />
+        <img
+          class="filterDiv aves"
+          src="assets/Tucano.png"
+          alt=""
+          style="width: 20%"
+        />
+        <img
+          class="filterDiv aves"
+          src="assets/Periquito.png"
+          alt=""
+          style="width: 20%"
+        />
+        <img
+          class="filterDiv aves"
+          src="assets/Arara.png"
+          alt=""
+          style="width: 20%"
+        />
+        <img
+          class="filterDiv aves"
+          src="assets/Urubu.png"
+          alt=""
+          style="width: 20%"
+        />
+        <img
+          class="filterDiv repteis"
+          src="assets/Jacare.png"
+          alt=""
+          style="width: 20%"
+        />
+        <img
+          class="filterDiv repteis"
+          src="assets/Camaleao.png"
+          alt=""
+          style="width: 20%"
+        />
+        <img
+          class="filterDiv repteis"
+          src="assets/Jabuti.png"
+          alt=""
+          style="width: 20%"
+        />
+        <img
+          class="filterDiv repteis"
+          src="assets/Cobra.png"
+          alt=""
+          style="width: 20%"
+        />
+      </div>
+    </div>  
+
+    <footer class="rodape">
+        <span class="rodape__conteudo">
+            <h1 id="comoChegar">COMO CHEGAR</h1>
+
+            <ul>
+                <li> <h3>Endereço</h4></li>
+                <li>
+                    Rua Dona Gloria Pagnoncelli,344 - Jardim Rosa de França - Guarulhos -
+                    SP
+                </li>
+            </ul>
+            <ul>
+                <h3>
+                        <li>Horário de Funcionamento
+                    </h4>
+                </li>
+                <li>Terça a Domingo das 09:00 às 17:00.</li>
+            </ul>
+            <ul>
+                <li>
+                    <h3>
+                        Fechamento dos Portões
+                    </h4>
+                </li>
+                <li>Às 16:30</li>
+            </ul>
+        </span>
+            
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3660.4743618519997!2d-46.55343071182019!3d-23.44334783478653!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cef4ffea13bf09%3A0xb8d85899781b01d4!2sZool%C3%B3gico%20Municipal%20de%20Guarulhos!5e0!3m2!1spt-BR!2sbr!4v1741217913708!5m2!1spt-BR!2sbr"
+        width="500"
+        height="350"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+      
+    </footer>
+
+    <script src="carrossel.js"></script>
+    <script src="filtros.js"></script>
+  </body>
+</html>

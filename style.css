@@ -1,0 +1,214 @@
+@import "reset.css";
+@import "carrosselImagens.css";
+@import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Prompt:wght@400;500&display=swap");
+
+:root {
+  --cor-font: #ffffff;
+  --cor-verde: #14661a;
+  --cor-verde-claro: #219a29;
+  --cor-verde-btnActive: #011c02;
+  --cor-fundo: #ffffff;
+
+  --font-family: "Karla", sans-serif;
+}
+
+.cabecalho {
+  display: flex;
+  background-color: var(--cor-verde);
+  height: 5em;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 0.7em;
+  font-size: 20px;
+}
+
+.cabecalho__lista {
+  display: flex;
+  gap: 3em;
+}
+
+.cabelhalho__lista-itens a {
+  color: var(--cor-font);
+}
+
+.container__logo {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background-color: var(--cor-verde);
+}
+
+.container__titulo {
+  width: 50%;
+}
+
+.img-girafa {
+  z-index: 100;
+  position: absolute;
+  bottom: 1em;
+  left: 74em;
+  transform: rotate(7deg);
+  width: 35em;
+  overflow: hidden;
+}
+
+.img-macaco {
+  position: absolute;
+  bottom: 15.5em;
+  right: 67em;
+  width: 28em;
+  overflow: hidden;
+}
+
+.img-tatu {
+  position: absolute;
+  right: 55em;
+  top: 32em;
+  -moz-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  width: 30em;
+  overflow: hidden;
+}
+
+.container {
+  padding: 3em 7em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2em;
+  margin-top: 50em;
+  background-color: var(--cor-fundo);
+}
+
+.container h2 {
+  font-size: 40px;
+  color: var(--cor-verde);
+}
+
+.container__conteudo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  width: 68em;
+}
+.container__conteudo span {
+  width: 40em;
+  text-align: justify;
+  font-size: 18px;
+}
+
+.container__infraestrutura {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  padding: 3em 7em;
+  
+}
+
+.container__infraestrutura h2{
+    font-size: 40px;
+    color: var(--cor-verde);
+}
+
+.container__flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 68em;
+gap: 20px;
+}
+
+.container__infraestrutura img {
+  width: 100%;
+}
+
+.container__infraestrutura span {
+  text-align: justify;
+  font-size: 18px;
+}
+
+.container__galeria {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+  padding: 5em 10em;
+}
+
+.container__galeria-titulo {
+  font-size: 40px;
+  color: var(--cor-verde);
+}
+
+.filtros {
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.filterDiv {
+  float: left;
+  background-color: #2196f3;
+  color: var(--cor-font);
+  width: 100px;
+  line-height: 100px;
+  text-align: center;
+  margin: 2px;
+  display: none;
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block;
+}
+
+/* Style the buttons */
+.btn {
+  color: var(--cor-font);
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: var(--cor-verde);
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 20px;
+}
+
+/* Add a light grey background on mouse-over */
+.btn:hover {
+  background-color: var(--cor-verde-claro);
+}
+
+/* Add a dark background to the active button */
+.btn.active {
+  background-color: var(--cor-verde-btnActive);
+  color: white;
+}
+
+.rodape {
+  width: 100%;
+  padding: 10em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  color: var(--cor-font);
+  gap: 5em;
+}
+.rodape__conteudo {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
